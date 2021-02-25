@@ -11,11 +11,10 @@ namespace ProblemTwo_CompilationError
         public List<Employee> DirectReports { get; set; }
         public string CostCode { get; set; }
 
-        public Manager(List<Employee> drEmployeesLst, string cCode) :base(eID, eName, eLevel, eDoJ)
+        public Manager(List<Employee> drEmployeesLst, string cCode) 
         {
             DirectReports = drEmployeesLst;
             CostCode = cCode;
-
         }
 
         public List<string> GetMyReports()
